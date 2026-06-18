@@ -11,7 +11,6 @@
                 <div class="input-container">
                     <label for="massa">Escolha a massa:</label>
                     <select name="massa" id="massa" v-model="massa">
-                      <option value="">Selecione a sua massa</option>
                       <option v-for="massa in massas" :key="massa.id" 
                       :value="massa.tipo">
                       {{ massa.tipo }}</option>
@@ -20,7 +19,6 @@
                 <div class="input-container">
                     <label for="sabor">Escolha o sabor da sua pizza:</label>
                     <select name="sabor" id="sabor" v-model="sabor">
-                      <option value="">Selecione o sabor da pizza</option>
                       <option v-for="sabor in sabores" :key="sabor.id" 
                       :value="sabor.tipo">
                       {{ sabor.tipo }}</option>
