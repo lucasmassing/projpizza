@@ -77,6 +77,51 @@
       "tipo": "Finalizado"
     }
   ],
-  "pizzas": [],
+  "pizzas": [
+    {
+      "id": "oeT1TnxnSnI",
+      "nome": "Lucas",
+      "massa": "Integral",
+      "sabor": "Marguerita",
+      "opcionais": [
+        "Borda com catupiry",
+        "Borda com cheddar"
+      ],
+      "status": "Solicitado"
+    },
+    {
+      "id": "NnivBgn_Kqo",
+      "numeroPedido": 1,
+      "nome": "Isadora",
+      "massa": "Sem gluten",
+      "sabor": "Marguerita",
+      "opcionais": [
+        "Borda com catupiry"
+      ],
+      "status": "Solicitado"
+    },
+    {
+      "id": "SPvxNQ6pq6k",
+      "numeroPedido": 1,
+      "nome": "Kill",
+      "massa": "Integral",
+      "sabor": "Portuguesa",
+      "opcionais": [
+        "Borda com catupiry"
+      ],
+      "status": "Solicitado"
+    },
+    {
+      "numeroPedido": 4,
+      "nome": "lklk",
+      "massa": "Sem gluten",
+      "sabor": "Mussarela",
+      "opcionais": [
+        "Borda com cheddar"
+      ],
+      "status": "Solicitado",
+      "id": "v39LFCvB7Is"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

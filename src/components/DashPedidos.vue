@@ -12,8 +12,8 @@
 
         </div>
         <div id="pizza-table-rows">
-            <div class="pizza-table-row" v-for="pizza in pizzas" :key="pizza.id">
-                <div class="order-number">{{ pizza.id}}</div>
+            <div class="pizza-table-row" v-for="(pizza, index) in pizzasVisualizadas" :key="pizza.id">
+                <div class="order-number">{{ index + 1 }}</div>
                 <div>{{ pizza.nome }}</div>
                 <div>{{ pizza.massa }}</div>
                 <div>{{ pizza.sabor }}</div>
@@ -48,6 +48,17 @@ export default {
             pizza_id: null,
             status:[],
             msg: null
+        }
+    },
+    computed: {
+        pizzasVisualizadas() {
+            if (!Array.isArray(this.pizzas)) {
+                return [];
+            }
+
+            return this.pizzas.map((pizza) => ({
+                ...pizza
+            }));
         }
     },
     methods:{

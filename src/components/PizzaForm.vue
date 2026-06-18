@@ -71,9 +71,18 @@ export default {
                 this.msg = 'Não foi possível carregar os ingredientes. Inicie o backend com npm run backend.'
             }
         },
+        async getNextPizzaNumber() {
+            const req = await fetch('http://localhost:3000/pizzas');
+            const pizzas = await req.json();
+
+            return pizzas.length + 1;
+        },
         async criarpizza(e){
             try {
+                const numeroPedido = await this.getNextPizzaNumber();
+
                 const data = {
+                    numeroPedido,
                     nome: this.nome,
                     massa: this.massa,
                     sabor: this.sabor,
@@ -90,7 +99,7 @@ export default {
 
                 const res = await req.json()
 
-                this.msg = `Pedido nº ${res.id} realizado com sucesso!`
+                this.msg = `Pedido nº ${numeroPedido} realizado com sucesso!`
 
                 setTimeout(()=> this.msg = "", 3000)
 
