@@ -42,6 +42,54 @@
       {
         "id": 6,
         "tipo": "Frango com catupiry"
+      },
+      {
+        "id": 7,
+        "tipo": "Bacon"
+      },
+      {
+        "id": 8,
+        "tipo": "Chocolate"
+      },
+      {
+        "id": 9,
+        "tipo": "Banana com canela"
+      },
+      {
+        "id": 10,
+        "tipo": "Atum"
+      },
+      {
+        "id": 11,
+        "tipo": "Napolitana"
+      },
+      {
+        "id": 12,
+        "tipo": "Quatro carnes"
+      },
+      {
+        "id": 13,
+        "tipo": "Alho e óleo"
+      },
+      {
+        "id": 14,
+        "tipo": "Lombo com catupiry"
+      },
+      {
+        "id": 15,
+        "tipo": "Palmito"
+      },
+      {
+        "id": 16,
+        "tipo": "Pepperoni"
+      },
+      {
+        "id": 17,
+        "tipo": "Romeu e Julieta"
+      },
+      {
+        "id": 18,
+        "tipo": "Vegetariana"
       }
     ],
     "opcionais": [
