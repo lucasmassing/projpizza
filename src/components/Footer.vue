@@ -11,13 +11,15 @@ export default {
 
 <style scoped>
   #footer {
-    height: 200px;
-    background-color: #222;
-    border-top: 4px solid #111;
-    color: #fcba03;
+    min-height: 160px;
+    background: linear-gradient(180deg, #222, #161616);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    color: #f4c15f;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    letter-spacing: 0.04em;
     bottom: 0;
     width: 100%;
   }

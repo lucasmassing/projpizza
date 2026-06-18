@@ -77,16 +77,6 @@
       "tipo": "Finalizado"
     }
   ],
-  "pizzas": [
-    {
-      "nome": "Carla",
-      "massa": "Fina",
-      "sabor": "Marguerita",
-      "opcionais": [
-        "Borda com catupiry e bacon"
-      ],
-      "status": "Solicitado",
-      "id": "djqpamiFkaY"
-    }
-  ]
+  "pizzas": [],
+  "$schema": "./node_modules/json-server/schema.json"
 }

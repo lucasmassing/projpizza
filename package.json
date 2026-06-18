@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev": "concurrently \"npm run serve\" \"npm run backend\"",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "backend": "json-server --watch db/db.json"
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
-    "@vue/cli-service": "~5.0.0"
+    "@vue/cli-service": "~5.0.0",
+    "concurrently": "^9.1.2"
   }
 }
